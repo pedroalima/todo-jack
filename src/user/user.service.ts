@@ -28,4 +28,11 @@ export class UserService {
       where: { email },
     });
   }
+
+  getProfile(user) {
+    return {
+      email: user.email,
+      name: user.name,
+    };
+  }
 }
