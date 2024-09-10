@@ -22,8 +22,8 @@ model User {
   name String
 }
 
-model Task {
-  id          Int      @id @default(autoincrement())
+model Todo {
+  id          String      @id
   title       String
   description String
   dueDate     String
